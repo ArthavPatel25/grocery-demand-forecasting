@@ -1,0 +1,144 @@
+{
+  "training_timestamp": "2025-09-05 14:24:13",
+  "best_model": "LightGBM",
+  "models": {
+    "lightgbm": {
+      "test_mae": 2.8409394914042068,
+      "test_rmse": 4.635430138530331,
+      "test_r2": 0.9491452332818194,
+      "cv_mae_mean": 2.728890145796695,
+      "cv_mae_std": 0.5814627246695241,
+      "num_features": 20,
+      "model_file": "lightgbm_model.pkl"
+    },
+    "xgboost": {
+      "test_mae": 2.8450965881347656,
+      "test_rmse": 4.681961449622056,
+      "test_r2": 0.9481191039085388,
+      "cv_mae_mean": 2.7273586273193358,
+      "cv_mae_std": 0.5939336335025437,
+      "num_features": 20,
+      "model_file": "xgboost_model.pkl"
+    }
+  },
+  "training_data": {
+    "train_samples": 71491,
+    "test_samples": 17991,
+    "features_used": [
+      "sales_rolling_mean_3",
+      "sales_rolling_max_3",
+      "product_category_share",
+      "revenue",
+      "sales_rolling_mean_7",
+      "sales_rolling_mean_14",
+      "sales_rolling_mean_30",
+      "sales_rolling_min_3",
+      "sales_rolling_max_7",
+      "product_daily_sales",
+      "store_daily_sales",
+      "product_velocity",
+      "sales_rolling_max_14",
+      "sales_rolling_max_30",
+      "store_daily_revenue",
+      "sales_rolling_std_30",
+      "sales_rolling_std_14",
+      "sales_rolling_std_7",
+      "sales_rolling_std_3",
+      "store_size_encoded"
+    ],
+    "num_features": 20
+  },
+  "feature_importance": {
+    "lightgbm_top_10": [
+      {
+        "feature": "product_category_share",
+        "importance": 0.2994007993714485
+      },
+      {
+        "feature": "revenue",
+        "importance": 0.2682445757969739
+      },
+      {
+        "feature": "sales_rolling_max_3",
+        "importance": 0.22493692140971347
+      },
+      {
+        "feature": "product_daily_sales",
+        "importance": 0.11429091320055886
+      },
+      {
+        "feature": "sales_rolling_mean_3",
+        "importance": 0.03169635284641282
+      },
+      {
+        "feature": "store_daily_sales",
+        "importance": 0.020011302076207438
+      },
+      {
+        "feature": "sales_rolling_std_3",
+        "importance": 0.016962237239428773
+      },
+      {
+        "feature": "sales_rolling_min_3",
+        "importance": 0.009153432775776441
+      },
+      {
+        "feature": "sales_rolling_max_7",
+        "importance": 0.0034608376912000477
+      },
+      {
+        "feature": "store_daily_revenue",
+        "importance": 0.0023265358729673957
+      }
+    ],
+    "xgboost_top_10": [
+      {
+        "feature": "sales_rolling_max_3",
+        "importance": 0.28154557943344116
+      },
+      {
+        "feature": "revenue",
+        "importance": 0.2531164586544037
+      },
+      {
+        "feature": "product_category_share",
+        "importance": 0.23032169044017792
+      },
+      {
+        "feature": "product_daily_sales",
+        "importance": 0.07886955887079239
+      },
+      {
+        "feature": "store_daily_sales",
+        "importance": 0.03035300225019455
+      },
+      {
+        "feature": "sales_rolling_mean_3",
+        "importance": 0.025937790051102638
+      },
+      {
+        "feature": "sales_rolling_std_3",
+        "importance": 0.016851259395480156
+      },
+      {
+        "feature": "sales_rolling_min_3",
+        "importance": 0.016484813764691353
+      },
+      {
+        "feature": "sales_rolling_max_7",
+        "importance": 0.011694289743900299
+      },
+      {
+        "feature": "store_size_encoded",
+        "importance": 0.010448367334902287
+      }
+    ]
+  },
+  "business_metrics": {
+    "total_actual_sales": 463410.0,
+    "total_predicted_sales": 459878.34986408206,
+    "sales_difference_pct": -0.7621005450719532,
+    "predictions_within_10pct": 53.693513423378356,
+    "predictions_within_20pct": 75.39325218164637
+  }
+}

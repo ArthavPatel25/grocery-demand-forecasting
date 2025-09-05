@@ -1,0 +1,52 @@
+{
+  "feature_engineering_timestamp": "2025-09-05 13:59:34",
+  "dataset_info": {
+    "total_rows": 89482,
+    "total_features": 84,
+    "date_range": {
+      "start": "2022-01-01",
+      "end": "2023-12-31"
+    },
+    "stores": 25,
+    "products": 123,
+    "categories": 6,
+    "provinces": 10
+  },
+  "feature_breakdown": {
+    "time_features": 25,
+    "lag_features": 12,
+    "rolling_features": 16,
+    "price_features": 8,
+    "promotion_features": 5,
+    "aggregation_features": 14,
+    "encoded_features": 9
+  },
+  "top_features_correlation": {
+    "sales_rolling_mean_3": 0.7309152315512825,
+    "sales_rolling_max_3": 0.6678239538763746,
+    "product_category_share": 0.6555280498070946,
+    "revenue": 0.6375479383842186,
+    "sales_rolling_mean_7": 0.6260337453626095,
+    "sales_rolling_mean_14": 0.5914295960274565,
+    "sales_rolling_mean_30": 0.5840038566417686,
+    "sales_rolling_min_3": 0.5601014161430643,
+    "sales_rolling_max_7": 0.5462939716032855,
+    "product_daily_sales": 0.5391969793004743,
+    "store_daily_sales": 0.5176835800814146,
+    "product_velocity": 0.517616920037433,
+    "sales_rolling_max_14": 0.493852173977668,
+    "sales_rolling_max_30": 0.4799300875603899,
+    "store_daily_revenue": 0.4593604290132737,
+    "sales_rolling_std_30": 0.45693960191228605,
+    "sales_rolling_std_14": 0.4507002715497031,
+    "sales_rolling_std_7": 0.45044148897902314,
+    "sales_rolling_std_3": 0.4327162172621805,
+    "store_size_encoded": 0.41466914210795874
+  },
+  "data_quality": {
+    "missing_values_filled": 337351,
+    "features_with_high_correlation": 20,
+    "multicollinearity_issues": 11
+  },
+  "ready_for_modeling": true
+}

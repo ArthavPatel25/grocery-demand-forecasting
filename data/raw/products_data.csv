@@ -1,0 +1,124 @@
+product_id,product_name,category,brand,base_price
+PR_0001,President's Choice Milk 1L,Dairy,President's Choice,1.99
+PR_0002,No Name Milk 1L,Dairy,No Name,1.99
+PR_0003,National Brand Milk 1L,Dairy,National Brand,1.99
+PR_0004,President's Choice Milk 2L,Dairy,President's Choice,3.49
+PR_0005,No Name Milk 2L,Dairy,No Name,3.49
+PR_0006,National Brand Milk 2L,Dairy,National Brand,3.49
+PR_0007,President's Choice Milk 4L,Dairy,President's Choice,5.99
+PR_0008,No Name Milk 4L,Dairy,No Name,5.99
+PR_0009,National Brand Milk 4L,Dairy,National Brand,5.99
+PR_0010,President's Choice Cheese Cheddar 400g,Dairy,President's Choice,6.99
+PR_0011,No Name Cheese Cheddar 400g,Dairy,No Name,6.99
+PR_0012,National Brand Cheese Cheddar 400g,Dairy,National Brand,6.99
+PR_0013,President's Choice Greek Yogurt 750g,Dairy,President's Choice,4.99
+PR_0014,No Name Greek Yogurt 750g,Dairy,No Name,4.99
+PR_0015,National Brand Greek Yogurt 750g,Dairy,National Brand,4.99
+PR_0016,President's Choice Butter 454g,Dairy,President's Choice,4.49
+PR_0017,No Name Butter 454g,Dairy,No Name,4.49
+PR_0018,National Brand Butter 454g,Dairy,National Brand,4.49
+PR_0019,President's Choice Cream 35% 473ml,Dairy,President's Choice,3.99
+PR_0020,No Name Cream 35% 473ml,Dairy,No Name,3.99
+PR_0021,National Brand Cream 35% 473ml,Dairy,National Brand,3.99
+PR_0022,President's Choice Cottage Cheese 500g,Dairy,President's Choice,3.49
+PR_0023,No Name Cottage Cheese 500g,Dairy,No Name,3.49
+PR_0024,National Brand Cottage Cheese 500g,Dairy,National Brand,3.49
+PR_0025,President's Choice Chicken Breast/kg,Meat,President's Choice,13.99
+PR_0026,No Name Chicken Breast/kg,Meat,No Name,13.99
+PR_0027,National Brand Chicken Breast/kg,Meat,National Brand,13.99
+PR_0028,President's Choice Ground Beef/kg,Meat,President's Choice,8.99
+PR_0029,No Name Ground Beef/kg,Meat,No Name,8.99
+PR_0030,National Brand Ground Beef/kg,Meat,National Brand,8.99
+PR_0031,President's Choice Pork Chops/kg,Meat,President's Choice,11.99
+PR_0032,No Name Pork Chops/kg,Meat,No Name,11.99
+PR_0033,National Brand Pork Chops/kg,Meat,National Brand,11.99
+PR_0034,President's Choice Salmon Fillet/kg,Meat,President's Choice,24.99
+PR_0035,No Name Salmon Fillet/kg,Meat,No Name,24.99
+PR_0036,National Brand Salmon Fillet/kg,Meat,National Brand,24.99
+PR_0037,President's Choice Turkey Slices 175g,Meat,President's Choice,4.99
+PR_0038,No Name Turkey Slices 175g,Meat,No Name,4.99
+PR_0039,National Brand Turkey Slices 175g,Meat,National Brand,4.99
+PR_0040,President's Choice Bacon 375g,Meat,President's Choice,5.99
+PR_0041,No Name Bacon 375g,Meat,No Name,5.99
+PR_0042,National Brand Bacon 375g,Meat,National Brand,5.99
+PR_0043,President's Choice Ground Turkey/kg,Meat,President's Choice,10.99
+PR_0044,No Name Ground Turkey/kg,Meat,No Name,10.99
+PR_0045,National Brand Ground Turkey/kg,Meat,National Brand,10.99
+PR_0046,President's Choice Bananas/kg,Produce,President's Choice,1.58
+PR_0047,No Name Bananas/kg,Produce,No Name,1.58
+PR_0048,National Brand Bananas/kg,Produce,National Brand,1.58
+PR_0049,President's Choice Apples Gala/kg,Produce,President's Choice,4.99
+PR_0050,No Name Apples Gala/kg,Produce,No Name,4.99
+PR_0051,National Brand Apples Gala/kg,Produce,National Brand,4.99
+PR_0052,President's Choice Carrots 2lb bag,Produce,President's Choice,2.99
+PR_0053,No Name Carrots 2lb bag,Produce,No Name,2.99
+PR_0054,National Brand Carrots 2lb bag,Produce,National Brand,2.99
+PR_0055,President's Choice Potatoes 5lb bag,Produce,President's Choice,3.99
+PR_0056,No Name Potatoes 5lb bag,Produce,No Name,3.99
+PR_0057,National Brand Potatoes 5lb bag,Produce,National Brand,3.99
+PR_0058,President's Choice Onions Yellow/kg,Produce,President's Choice,2.99
+PR_0059,No Name Onions Yellow/kg,Produce,No Name,2.99
+PR_0060,National Brand Onions Yellow/kg,Produce,National Brand,2.99
+PR_0061,President's Choice Broccoli Crown,Produce,President's Choice,2.49
+PR_0062,No Name Broccoli Crown,Produce,No Name,2.49
+PR_0063,National Brand Broccoli Crown,Produce,National Brand,2.49
+PR_0064,President's Choice Lettuce Iceberg,Produce,President's Choice,2.99
+PR_0065,No Name Lettuce Iceberg,Produce,No Name,2.99
+PR_0066,National Brand Lettuce Iceberg,Produce,National Brand,2.99
+PR_0067,President's Choice White Bread 675g,Bakery,President's Choice,2.99
+PR_0068,No Name White Bread 675g,Bakery,No Name,2.99
+PR_0069,National Brand White Bread 675g,Bakery,National Brand,2.99
+PR_0070,President's Choice Whole Wheat Bread 675g,Bakery,President's Choice,3.49
+PR_0071,No Name Whole Wheat Bread 675g,Bakery,No Name,3.49
+PR_0072,National Brand Whole Wheat Bread 675g,Bakery,National Brand,3.49
+PR_0073,President's Choice Bagels 6pk,Bakery,President's Choice,3.99
+PR_0074,No Name Bagels 6pk,Bakery,No Name,3.99
+PR_0075,National Brand Bagels 6pk,Bakery,National Brand,3.99
+PR_0076,President's Choice Croissants 4pk,Bakery,President's Choice,4.99
+PR_0077,No Name Croissants 4pk,Bakery,No Name,4.99
+PR_0078,National Brand Croissants 4pk,Bakery,National Brand,4.99
+PR_0079,President's Choice Muffins Blueberry 4pk,Bakery,President's Choice,4.49
+PR_0080,No Name Muffins Blueberry 4pk,Bakery,No Name,4.49
+PR_0081,National Brand Muffins Blueberry 4pk,Bakery,National Brand,4.49
+PR_0082,President's Choice Dinner Rolls 8pk,Bakery,President's Choice,2.99
+PR_0083,No Name Dinner Rolls 8pk,Bakery,No Name,2.99
+PR_0084,National Brand Dinner Rolls 8pk,Bakery,National Brand,2.99
+PR_0085,President's Choice Ice Cream 1L,Frozen,President's Choice,5.99
+PR_0086,No Name Ice Cream 1L,Frozen,No Name,5.99
+PR_0087,National Brand Ice Cream 1L,Frozen,National Brand,5.99
+PR_0088,President's Choice Frozen Pizza 400g,Frozen,President's Choice,4.99
+PR_0089,No Name Frozen Pizza 400g,Frozen,No Name,4.99
+PR_0090,National Brand Frozen Pizza 400g,Frozen,National Brand,4.99
+PR_0091,President's Choice Frozen Vegetables 750g,Frozen,President's Choice,3.99
+PR_0092,No Name Frozen Vegetables 750g,Frozen,No Name,3.99
+PR_0093,National Brand Frozen Vegetables 750g,Frozen,National Brand,3.99
+PR_0094,President's Choice Frozen Berries 600g,Frozen,President's Choice,6.99
+PR_0095,No Name Frozen Berries 600g,Frozen,No Name,6.99
+PR_0096,National Brand Frozen Berries 600g,Frozen,National Brand,6.99
+PR_0097,President's Choice Frozen Fish Fillets 400g,Frozen,President's Choice,7.99
+PR_0098,No Name Frozen Fish Fillets 400g,Frozen,No Name,7.99
+PR_0099,National Brand Frozen Fish Fillets 400g,Frozen,National Brand,7.99
+PR_0100,President's Choice Frozen French Fries 1kg,Frozen,President's Choice,3.49
+PR_0101,No Name Frozen French Fries 1kg,Frozen,No Name,3.49
+PR_0102,National Brand Frozen French Fries 1kg,Frozen,National Brand,3.49
+PR_0103,President's Choice Rice Jasmine 1kg,Pantry,President's Choice,3.99
+PR_0104,No Name Rice Jasmine 1kg,Pantry,No Name,3.99
+PR_0105,National Brand Rice Jasmine 1kg,Pantry,National Brand,3.99
+PR_0106,President's Choice Pasta 500g,Pantry,President's Choice,1.99
+PR_0107,No Name Pasta 500g,Pantry,No Name,1.99
+PR_0108,National Brand Pasta 500g,Pantry,National Brand,1.99
+PR_0109,President's Choice Cereal 525g,Pantry,President's Choice,4.99
+PR_0110,No Name Cereal 525g,Pantry,No Name,4.99
+PR_0111,National Brand Cereal 525g,Pantry,National Brand,4.99
+PR_0112,President's Choice Canned Tomatoes 796ml,Pantry,President's Choice,1.99
+PR_0113,No Name Canned Tomatoes 796ml,Pantry,No Name,1.99
+PR_0114,National Brand Canned Tomatoes 796ml,Pantry,National Brand,1.99
+PR_0115,President's Choice Olive Oil 500ml,Pantry,President's Choice,7.99
+PR_0116,No Name Olive Oil 500ml,Pantry,No Name,7.99
+PR_0117,National Brand Olive Oil 500ml,Pantry,National Brand,7.99
+PR_0118,President's Choice Peanut Butter 1kg,Pantry,President's Choice,6.99
+PR_0119,No Name Peanut Butter 1kg,Pantry,No Name,6.99
+PR_0120,National Brand Peanut Butter 1kg,Pantry,National Brand,6.99
+PR_0121,President's Choice Oats 1kg,Pantry,President's Choice,4.49
+PR_0122,No Name Oats 1kg,Pantry,No Name,4.49
+PR_0123,National Brand Oats 1kg,Pantry,National Brand,4.49

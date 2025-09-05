@@ -1,0 +1,26 @@
+store_id,chain,province,city,store_size,population_density
+ST_001,No Frills,ON,City_A1,Medium,Urban
+ST_002,Metro,BC,City_B1,Large,Suburban
+ST_003,Metro,PE,City_C1,Medium,Urban
+ST_004,FreshCo,SK,City_D1,Large,Rural
+ST_005,FreshCo,BC,City_E1,Medium,Rural
+ST_006,Thrifty Foods,NL,City_F1,Large,Rural
+ST_007,Sobeys,QC,City_G1,Small,Rural
+ST_008,No Frills,NL,City_H1,Medium,Rural
+ST_009,Metro,PE,City_I1,Small,Suburban
+ST_010,Metro,SK,City_J1,Large,Urban
+ST_011,Loblaws,BC,City_K1,Large,Urban
+ST_012,Thrifty Foods,MB,City_L1,Large,Urban
+ST_013,FreshCo,NS,City_M1,Medium,Suburban
+ST_014,Sobeys,MB,City_N1,Large,Urban
+ST_015,Loblaws,PE,City_O1,Medium,Rural
+ST_016,Thrifty Foods,AB,City_P1,Large,Suburban
+ST_017,IGA,ON,City_Q1,Medium,Rural
+ST_018,Loblaws,MB,City_R1,Large,Suburban
+ST_019,Loblaws,PE,City_S1,Large,Urban
+ST_020,FreshCo,NS,City_T1,Small,Urban
+ST_021,FreshCo,NS,City_U1,Small,Suburban
+ST_022,FreshCo,QC,City_V1,Medium,Suburban
+ST_023,IGA,NB,City_W1,Large,Urban
+ST_024,Loblaws,NL,City_X1,Small,Suburban
+ST_025,Thrifty Foods,NB,City_Y1,Small,Suburban
