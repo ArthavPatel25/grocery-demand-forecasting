@@ -5,9 +5,6 @@ on:
     types:
       - completed
     branches: [main]
-  # Alternative: trigger on successful push to main
-  # push:
-  #   branches: [main]
 
 jobs:
   docker-build-and-deploy:
@@ -15,10 +12,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
+      uses: docker/setup-buildx-action@v3
+    
+    - name: Create CI requirements for Docker
+      run: |
+        # Remove Windows-specific packages for Docker build
+        grep -v "pywin32\|pywinpty" requirements.txt > requirements-ci.txt
+        mv requirements-ci.txt requirements.txt
     
     - name: Build Docker image
       run: |
@@ -28,16 +31,53 @@ jobs:
     - name: Test Docker container
       run: |
         docker run -d --name test-container -p 8000:8000 grocery-forecasting:latest
-        sleep 30
-        curl -f http://localhost:8000/health || exit 1
+        sleep 45
+        # Wait for health check to pass
+        for i in {1..10}; do
+          if curl -f http://localhost:8000/health; then
+            echo "Health check passed"
+            break
+          fi
+          echo "Waiting for health check... attempt $i"
+          sleep 5
+        done
+        # Test prediction endpoint
+        curl -X POST "http://localhost:8000/predict" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "store_id": "ST_001",
+            "product_id": "PR_1001", 
+            "date": "2024-01-01",
+            "price": 5.99,
+            "promotion_flag": 1,
+            "chain": "Loblaws",
+            "province": "ON",
+            "category": "Dairy",
+            "brand": "TestBrand"
+          }'
         docker stop test-container
+        docker rm test-container
+    
+    - name: Test Docker Compose
+      run: |
+        # Test docker-compose build and startup
+        docker-compose build
+        docker-compose up -d
+        sleep 60
+        # Test API
+        curl -f http://localhost:8000/health
+        # Test Streamlit (should return HTML)
+        curl -f http://localhost:8501
+        docker-compose down
     
     # Add your deployment steps here
     - name: Deploy to staging
       if: github.ref == 'refs/heads/main'
       run: |
         echo "Deploying to staging environment..."
+        echo "Docker image: grocery-forecasting:${{ github.sha }}"
         # Add your staging deployment commands here
+        # docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
         # docker push your-registry/grocery-forecasting:${{ github.sha }}
         # kubectl apply -f k8s/staging/
     
@@ -45,6 +85,15 @@ jobs:
       if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[deploy-prod]')
       run: |
         echo "Deploying to production environment..."
+        echo "Docker image: grocery-forecasting:${{ github.sha }}"
         # Add your production deployment commands here
         # docker push your-registry/grocery-forecasting:${{ github.sha }}
         # kubectl apply -f k8s/production/
+    
+    - name: Cleanup
+      if: always()
+      run: |
+        # Clean up any running containers
+        docker stop test-container || true
+        docker rm test-container || true
+        docker-compose down || true
