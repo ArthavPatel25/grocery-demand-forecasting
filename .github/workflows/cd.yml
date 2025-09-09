@@ -1,0 +1,50 @@
+name: CD Pipeline
+on:
+  workflow_run:
+    workflows: ["CI Pipeline"]
+    types:
+      - completed
+    branches: [main]
+  # Alternative: trigger on successful push to main
+  # push:
+  #   branches: [main]
+
+jobs:
+  docker-build-and-deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+    
+    - name: Build Docker image
+      run: |
+        docker build -t grocery-forecasting:latest .
+        docker tag grocery-forecasting:latest grocery-forecasting:${{ github.sha }}
+    
+    - name: Test Docker container
+      run: |
+        docker run -d --name test-container -p 8000:8000 grocery-forecasting:latest
+        sleep 30
+        curl -f http://localhost:8000/health || exit 1
+        docker stop test-container
+    
+    # Add your deployment steps here
+    - name: Deploy to staging
+      if: github.ref == 'refs/heads/main'
+      run: |
+        echo "Deploying to staging environment..."
+        # Add your staging deployment commands here
+        # docker push your-registry/grocery-forecasting:${{ github.sha }}
+        # kubectl apply -f k8s/staging/
+    
+    - name: Deploy to production
+      if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[deploy-prod]')
+      run: |
+        echo "Deploying to production environment..."
+        # Add your production deployment commands here
+        # docker push your-registry/grocery-forecasting:${{ github.sha }}
+        # kubectl apply -f k8s/production/

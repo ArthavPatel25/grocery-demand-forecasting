@@ -1,0 +1,125 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+
+# Jupyter notebooks (if not needed in production)
+notebooks/
+*.ipynb
+.ipynb_checkpoints
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+.ropeproject
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Allow requirements.txt but exclude other txt files
+*.txt
+!requirements.txt
+
+# Docker files (avoid infinite loops)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Development and testing files
+tests/
+test_*.py
+*_test.py
+conftest.py
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment and config files
+.env*
+.flaskenv*
+instance/
+.webassets-cache
+
+# Database files (if any)
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Model artifacts that are too large (keep only necessary ones)
+# Uncomment if you have large model files you don't want in Docker
+# *.pkl
+# *.model
+# *.h5
+
+# Node modules (if you have any frontend components)
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+*.whl
