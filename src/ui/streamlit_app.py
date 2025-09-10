@@ -1,11 +1,12 @@
 # src/ui/streamlit_app.py
-import streamlit as st
-import requests
-import pandas as pd
-import plotly.express as px
 import json
 import os
-from datetime import date, timedelta, datetime
+from datetime import date, datetime, timedelta
+
+import pandas as pd
+import plotly.express as px
+import requests
+import streamlit as st
 
 # Page configuration
 st.set_page_config(
