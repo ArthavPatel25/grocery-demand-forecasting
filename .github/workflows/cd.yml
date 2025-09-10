@@ -60,15 +60,20 @@ jobs:
     
     - name: Test Docker Compose
       run: |
+        # Install docker-compose or use docker compose
+        if ! command -v docker-compose &> /dev/null; then
+          # Use newer docker compose plugin (built into Docker)
+          alias docker-compose='docker compose'
+        fi
         # Test docker-compose build and startup
-        docker-compose build
-        docker-compose up -d
+        docker compose build || docker-compose build
+        docker compose up -d || docker-compose up -d
         sleep 60
         # Test API
         curl -f http://localhost:8000/health
         # Test Streamlit (should return HTML)
         curl -f http://localhost:8501
-        docker-compose down
+        docker compose down || docker-compose down
     
     # Add your deployment steps here
     - name: Deploy to staging
